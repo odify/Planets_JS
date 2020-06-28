@@ -19,7 +19,7 @@ header{
     text-shadow: 1.77px 2.22px 3.44px #191919;
     text-transform: uppercase;
     animation-name: xy;
-    animation-duration: 7s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
