@@ -1,0 +1,91 @@
+body{
+    font-family: Fira Sans, serif;
+    font-weight: 800;
+    background-color: #191919;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+header{
+    margin: 0 auto;
+    background-color: #F25c27;
+    text-align: center;
+    border: 3px outset #fff;
+}
+.headline{
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 0.9px;
+    background-color: #F25c27;
+    text-shadow: 1.77px 2.22px 3.44px #191919;
+    text-transform: uppercase;
+    animation-name: xy;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@keyframes xy{
+    0% {margin-left: 2%; text-shadow: 1.77px 2.22px 3.44px #000;}
+    33% {margin-right: 1%; text-shadow: 2.77px 0.22px 4.44px #000;}
+    66% {margin-left: 1%; text-shadow: 1.77px 1.22px 3.44px #000;}
+    100% {margin-left: 1%; color: black;}
+}
+main{
+    height: 100vh;
+    text-align: center;
+}
+section{
+  margin-left: 12.5%;
+  width: 75%;
+}
+.draggable-list {
+  padding: 0;
+  list-style-type: none;
+}
+.draggable-list li {
+  background-color: #000;
+  display: flex;
+  flex: 1;
+}
+.draggable-list li:not(:last-of-type) {
+  border-bottom: 1px solid var(--border-color);
+}
+.draggable-list .number {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+}
+.draggable-list li.over .draggable {
+  background-color: #f25c28;
+}
+.draggable-list .planet-name {
+  margin: 0 20px 0 0;
+}
+.draggable-list li.right .planet-name {
+  color: #3dd7ac;
+}
+.draggable-list li.wrong .planet-name {
+  color: #df1600;
+}
+.draggable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+}
+.check-btn {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1em;
+  padding: 10px 20px;
+}
+.check-btn:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 1px 2px 2px #fff;
+  transition: 0.8s linear
+}
