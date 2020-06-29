@@ -1,5 +1,6 @@
 // Simple Vanilla JS for creating a sortable list...
 
+
 const draggable_list = document.getElementById('draggable-list');
 const check = document.getElementById('check');
 const nearestPlanet = [
@@ -12,6 +13,7 @@ const nearestPlanet = [
   'Uranus',
   'Neptune',
   'Pluto'
+  
 ];
 
 const listItems = [];

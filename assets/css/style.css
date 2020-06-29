@@ -1,7 +1,9 @@
 body{
     font-family: Fira Sans, serif;
     font-weight: 800;
-    background-color: #191919;
+    background-image: url(../img/uni.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     scroll-behavior: smooth;
 }
@@ -10,6 +12,9 @@ header{
     background-color: #F25c27;
     text-align: center;
     border: 3px outset #fff;
+}
+h4{
+  background-color: #000;
 }
 .headline{
     font-size: 3em;
@@ -40,6 +45,7 @@ section{
 .draggable-list {
   padding: 0;
   list-style-type: none;
+  border: 5px outset #fff;
 }
 .draggable-list li {
   background-color: #000;
